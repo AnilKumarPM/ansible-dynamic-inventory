@@ -1,5 +1,10 @@
 - name: ping the server
   hosts: roboshop-frontend
   tasks:
-    name: ping the server
+  - name: ping the server
     ping:
+
+  - name: print Hi
+    debug:
+      msg: "Hi"
+
